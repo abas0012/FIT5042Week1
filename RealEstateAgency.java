@@ -24,13 +24,16 @@ public class RealEstateAgency {
    
     }
     
+    /**
+     *
+     */
     public void createProperties() {
         try {
-            this.propertyRepository.addProperty(new Property(1, "Wellington Rd, Clayton VIC 3800, Australia", 2, 150, 420000));
-            this.propertyRepository.addProperty(new Property(2, "900 Dandenong Rd, Caulfield East VIC 3145, Australia", 3, 352, 360000));
-            this.propertyRepository.addProperty(new Property(3, "Moorooduc Hwy, Frankston VIC 3199", 5, 800, 650000));
-            this.propertyRepository.addProperty(new Property(4, "Level 3/222 Bourke St, Melbourne VIC 3000", 2, 170, 435000));
-            this.propertyRepository.addProperty(new Property(5, "246 Clayton Rd, Clayton VIC 3168", 1, 60, 820000));
+            this.propertyRepository.addProperty(new Property(1, "Wellington Rd, Clayton VIC 3800, Australia", 2, 150, 42.00));
+            this.propertyRepository.addProperty(new Property(2, "900 Dandenong Rd, Caulfield East VIC 3145, Australia", 3, 352, 36.00));
+            this.propertyRepository.addProperty(new Property(3, "Moorooduc Hwy, Frankston VIC 3199", 5, 800, 65.00));
+            this.propertyRepository.addProperty(new Property(4, "Level 3/222 Bourke St, Melbourne VIC 3000", 2, 170, 43.50));
+            this.propertyRepository.addProperty(new Property(5, "246 Clayton Rd, Clayton VIC 3168", 1, 60, 82.00));
             System.out.println("5 properties have been added");
         } catch (Exception ex) {
             System.out.println("Error: Failed to create properties: " + ex.getMessage());
